@@ -1,6 +1,7 @@
 package main
 
 import (
+        "fmt"
         "encoding/json"
         "github.com/gorilla/mux"
         "net/http"
@@ -18,5 +19,6 @@ func main() {
     Addr:    "127.0.0.1:8000",
   }
 
+  fmt.Println("whoop whoo!")
   server.ListenAndServe()
 }
